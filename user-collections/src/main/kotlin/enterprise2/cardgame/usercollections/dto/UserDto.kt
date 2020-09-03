@@ -2,6 +2,8 @@ package enterprise2.cardgame.usercollections.dto
 
 import io.swagger.annotations.ApiModelProperty
 
+//test
+
 class UserDto (
         @get:ApiModelProperty("Id of the user")
         var userId: String? = null,

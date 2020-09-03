@@ -16,6 +16,7 @@
 
     <properties>
         <version.kotlin>1.3.61</version.kotlin>
+        <version.surefire-failsafe>3.0.0-M4</version.surefire-failsafe>
     </properties>
 
     <dependencies>
@@ -92,6 +93,19 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>3.0.0-M4</version>
+            </plugin>
+
+            <!-- Built-in plugin used to execute unit tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${version.surefire-failsafe}</version>
+                <configuration>
+                    <forkCount>1</forkCount>
+                    <redirectTestOutputToFile>true</redirectTestOutputToFile>
+                    <rerunFailingTestsCount>3</rerunFailingTestsCount>
+                    <argLine>-Xms512m -Xmx2048m</argLine>
+                </configuration>
             </plugin>
 
 
