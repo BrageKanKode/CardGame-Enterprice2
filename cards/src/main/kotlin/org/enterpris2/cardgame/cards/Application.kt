@@ -1,4 +1,4 @@
-package org.enterpris2.cardgame.scores
+package org.enterpris2.cardgame.cards
 
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -9,7 +9,7 @@ import springfox.documentation.service.ApiInfo
 import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 
-@SpringBootApplication(scanBasePackages = ["org.enterpris2.cardgame"])
+@SpringBootApplication
 class Application {
 
     @Bean
@@ -23,8 +23,8 @@ class Application {
 
     private fun apiInfo(): ApiInfo {
         return ApiInfoBuilder()
-                .title("API for Scores")
-                .description("REST service for ranking of players")
+                .title("API for Cards")
+                .description("REST service with info regarding all the cards in the game")
                 .version("1.0")
                 .build()
     }

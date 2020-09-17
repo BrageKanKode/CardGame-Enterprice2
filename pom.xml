@@ -15,6 +15,7 @@
         <module>rest-dto</module>
         <module>scores</module>
         <module>rest-exception</module>
+        <module>cards</module>
     </modules>
 
     <properties>
