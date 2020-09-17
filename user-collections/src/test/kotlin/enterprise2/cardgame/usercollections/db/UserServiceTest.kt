@@ -106,6 +106,27 @@ internal class UserServiceTest {
     }
 
     @Test
+    fun testOpenPackFail(){
+
+        val userId = "foo"
+        userService.registerNewUser(userId)
+
+        val before = userService.findByIdEager(userId)!!
+        val totPacks = before.cardPacks
+
+        repeat(totPacks){
+            userService.openPack(userId)
+        }
+
+        val after = userService.findByIdEager(userId)!!
+        assertEquals(0, after.cardPacks)
+
+        assertThrows(IllegalArgumentException::class.java){
+            userService.openPack(userId)
+        }
+    }
+
+    @Test
     fun testMillCard() {
 
         val userId = "foo"

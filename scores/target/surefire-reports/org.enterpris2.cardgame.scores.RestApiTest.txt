@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: org.enterpris2.cardgame.scores.RestApiTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in org.enterpris2.cardgame.scores.RestApiTest
+org.enterpris2.cardgame.scores.RestApiTest.testGetPage  Time elapsed: 0.014 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.enterpris2.cardgame.scores.RestApiTest.testGetPage(RestApiTest.kt:47)
+
+org.enterpris2.cardgame.scores.RestApiTest.testAllPages  Time elapsed: 0.048 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at org.enterpris2.cardgame.scores.RestApiTest.testAllPages(RestApiTest.kt:60)
+
