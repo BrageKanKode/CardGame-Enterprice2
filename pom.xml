@@ -16,6 +16,8 @@
         <module>scores</module>
         <module>rest-exception</module>
         <module>cards</module>
+        <module>api-gateway</module>
+        <module>e2e-tests</module>
     </modules>
 
     <properties>
@@ -79,6 +81,25 @@
                 <groupId>javax.xml.bind</groupId>
                 <artifactId>jaxb-api</artifactId>
                 <version>2.3.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
+                <version>1.0.4.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock-standalone</artifactId>
+                <version>2.27.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Hoxton.RELEASE</version>
+                <scope>import</scope>
+                <type>pom</type>
             </dependency>
 
 
@@ -165,6 +186,8 @@
                             <artifactId>kotlin-maven-noarg</artifactId>
                             <version>${version.kotlin}</version>
                         </dependency>
+
+
 
                     </dependencies>
 

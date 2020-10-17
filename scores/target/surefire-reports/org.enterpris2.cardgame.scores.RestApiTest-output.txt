@@ -1,62 +1,159 @@
-2020-09-17 10:20:00.511  INFO 10736 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.enterpris2.cardgame.scores.RestApiTest], using SpringBootContextLoader
-2020-09-17 10:20:00.512  INFO 10736 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.enterpris2.cardgame.scores.RestApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2020-09-17 10:20:00.514  INFO 10736 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
-2020-09-17 10:20:00.514  INFO 10736 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4cc40892, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@330888a, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@62edf11e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@79205848, org.springframework.test.context.support.DirtiesContextTestExecutionListener@154c4f66, org.springframework.test.context.transaction.TransactionalTestExecutionListener@12bff19d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1f5797d5, org.springframework.test.context.event.EventPublishingTestExecutionListener@64ce7e6f, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@130e2aef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7ed0020a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5d1acb3a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4ab0ebf0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@288be91b]
-2020-09-17 10:20:00.524  WARN 10736 --- [o-auto-1-exec-7] o.s.web.servlet.PageNotFound             : No mapping for GET /api/scores
-2020-09-17 10:20:00.525  WARN 10736 --- [o-auto-1-exec-7] o.s.web.servlet.PageNotFound             : No handler found for GET /api/scores
-2020-09-17 10:20:00.525  WARN 10736 --- [o-auto-1-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/scores]
-Request method:	GET
-Request URI:	http://localhost:50861/api/scores
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
+2020-10-17 12:31:24.815  INFO 664 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [org.enterpris2.cardgame.scores.RestApiTest], using SpringBootContextLoader
+2020-10-17 12:31:24.816  INFO 664 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [org.enterpris2.cardgame.scores.RestApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-10-17 12:31:24.823  INFO 664 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-10-17 12:31:24.824  INFO 664 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3545c913, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@5d00e30e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3cdc5155, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@195888a6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2ced7cf, org.springframework.test.context.transaction.TransactionalTestExecutionListener@580c4c0b, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@604e8a6, org.springframework.test.context.event.EventPublishingTestExecutionListener@5bc44d78, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2f408960, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1516f497, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@34766f4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4d204b30, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6600d07d]
 
-HTTP/1.1 404 
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Thu, 17 Sep 2020 08:20:00 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
 
-{
-    "timestamp": "2020-09-17T08:20:00.525+00:00",
-    "status": 404,
-    "error": "Not Found",
-    "message": "",
-    "path": "/api/scores"
-}
-2020-09-17 10:20:00.539  WARN 10736 --- [o-auto-1-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /api/scores
-2020-09-17 10:20:00.540  WARN 10736 --- [o-auto-1-exec-8] o.s.web.servlet.PageNotFound             : No handler found for GET /api/scores
-2020-09-17 10:20:00.540  WARN 10736 --- [o-auto-1-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /api/scores]
-Request method:	GET
-Request URI:	http://localhost:50861/api/scores
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=application/json, application/javascript, text/javascript, text/json
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-
-HTTP/1.1 404 
-Content-Type: application/json
-Transfer-Encoding: chunked
-Date: Thu, 17 Sep 2020 08:20:00 GMT
-Keep-Alive: timeout=60
-Connection: keep-alive
-
-{
-    "timestamp": "2020-09-17T08:20:00.541+00:00",
-    "status": 404,
-    "error": "Not Found",
-    "message": "",
-    "path": "/api/scores"
-}
+2020-10-17 12:31:24.902  INFO 664 --- [           main] o.e.cardgame.scores.RestApiTest          : Starting RestApiTest on DESKTOP-77QGOLO with PID 664 (started by bragg in C:\Users\bragg\OneDrive\Documents\Skole\5.semester\Enterpriceprogrammering 2\CardGame-Enterprice2\scores)
+2020-10-17 12:31:24.902  INFO 664 --- [           main] o.e.cardgame.scores.RestApiTest          : The following profiles are active: FakeData,test
+2020-10-17 12:31:25.633  INFO 664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-10-17 12:31:25.651  INFO 664 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 1 JPA repository interfaces.
+2020-10-17 12:31:25.827  INFO 664 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-17 12:31:26.203  INFO 664 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-10-17 12:31:26.217  INFO 664 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-10-17 12:31:26.217  INFO 664 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-10-17 12:31:26.428  INFO 664 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-10-17 12:31:26.428  INFO 664 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2020-10-17 12:31:26.776  INFO 664 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-10-17 12:31:26.777  INFO 664 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-10-17 12:31:26.777  INFO 664 --- [           main] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:mem:db (H2 1.4)
+2020-10-17 12:31:26.788  INFO 664 --- [           main] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.007s)
+2020-10-17 12:31:26.799  INFO 664 --- [           main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 1.0
+2020-10-17 12:31:26.799  INFO 664 --- [           main] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2020-10-17 12:31:26.847  INFO 664 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-17 12:31:26.866  INFO 664 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-10-17 12:31:26.878  INFO 664 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-10-17 12:31:26.919  INFO 664 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-10-17 12:31:26.920  INFO 664 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+Hibernate: select userstats0_.user_id as user_id1_0_0_, userstats0_.defeats as defeats2_0_0_, userstats0_.draws as draws3_0_0_, userstats0_.score as score4_0_0_, userstats0_.victories as victorie5_0_0_ from user_stats userstats0_ where userstats0_.user_id=?
+Hibernate: update user_stats set defeats=?, draws=?, score=?, victories=? where user_id=?
+2020-10-17 12:31:27.272  WARN 664 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-10-17 12:31:27.543  INFO 664 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-10-17 12:31:28.587  INFO 664 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 57655 (http) with context path ''
+2020-10-17 12:31:28.938  INFO 664 --- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-10-17 12:31:28.939  INFO 664 --- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-10-17 12:31:28.945  INFO 664 --- [           main] o.e.cardgame.scores.RestApiTest          : Started RestApiTest in 4.117 seconds (JVM running for 11.115)
+2020-10-17 12:31:29.875  INFO 664 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-17 12:31:29.875  INFO 664 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-10-17 12:31:29.901  INFO 664 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ where userstats0_.score<? or userstats0_.score=? and userstats0_.user_id<? order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ where userstats0_.score<? or userstats0_.score=? and userstats0_.user_id<? order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ where userstats0_.score<? or userstats0_.score=? and userstats0_.user_id<? order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ where userstats0_.score<? or userstats0_.score=? and userstats0_.user_id<? order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ where userstats0_.score<? or userstats0_.score=? and userstats0_.user_id<? order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+Hibernate: select count(*) as col_0_0_ from user_stats userstats0_
+Hibernate: select userstats0_.user_id as user_id1_0_, userstats0_.defeats as defeats2_0_, userstats0_.draws as draws3_0_, userstats0_.score as score4_0_, userstats0_.victories as victorie5_0_ from user_stats userstats0_ order by userstats0_.score DESC, userstats0_.user_id DESC limit ?
+2020-10-17 12:31:30.797  INFO 664 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-17 12:31:30.800  INFO 664 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-17 12:31:30.801  INFO 664 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-10-17 12:31:30.805  INFO 664 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-10-17 12:31:31.126  INFO 664 --- [extShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-10-17 12:31:31.126  INFO 664 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-17 12:31:31.127  INFO 664 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-10-17 12:31:31.130  INFO 664 --- [extShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
