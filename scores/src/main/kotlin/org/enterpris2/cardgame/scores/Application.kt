@@ -9,7 +9,7 @@ import springfox.documentation.service.ApiInfo
 import springfox.documentation.spi.DocumentationType
 import springfox.documentation.spring.web.plugins.Docket
 
-@SpringBootApplication(scanBasePackages = ["org.enterpris2.cardgame"])
+@SpringBootApplication(scanBasePackages = ["org.enterpris2"])
 class Application {
 
     @Bean

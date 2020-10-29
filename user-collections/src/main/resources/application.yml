@@ -2,7 +2,7 @@ spring:
   application:
     name: user-collections-service
   datasource:
-    url: "jdbc:postgresql://localhost:5432/postgres"
+    url: "jdbc:postgresql://postgres-user-collections:5432/postgres"
     username: "postgres"
     password: "postgres"
     driver-class-name: org.postgresql.Driver
@@ -12,8 +12,8 @@ spring:
       ddl-auto: validate
   mvc:
     throwExceptionIfNoHandlerFound: true
-    resources:
-      add-mappings: false
+  resources:
+    add-mappings: false
   cloud:
     consul:
       host: discovery
