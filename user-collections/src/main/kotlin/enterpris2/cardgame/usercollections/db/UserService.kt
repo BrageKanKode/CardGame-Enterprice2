@@ -14,13 +14,14 @@ import org.springframework.transaction.annotation.Transactional
 import javax.persistence.LockModeType
 
 @Repository
-interface UserRepository : CrudRepository<User, String> {
+interface UserRepository : CrudRepository<User, String>{
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
-    @Query("SELECT u FROM User u WHERE u.userId = :id")
-    fun lockedFind(@Param("id") userId: String): User?
+    @Query("select u from User u where u.userId = :id")
+    fun lockedFind(@Param("id") userId: String) : User?
 
 }
+
 
 @Service
 @Transactional

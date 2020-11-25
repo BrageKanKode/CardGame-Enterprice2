@@ -68,7 +68,7 @@ class RestAPI(
             } catch (e: IllegalArgumentException){
                 return RestResponseFactory.userFailure(e.message ?: "Failed to open pack")
             }
-            return RestResponseFactory.payload(200, PatchResultDto().apply { cardIdsInOpenedPacket.addAll(ids) })
+            return RestResponseFactory.payload(200, PatchResultDto().apply { cardIdsInOpenedPack.addAll(ids) })
         }
 
         val cardId = dto.cardId

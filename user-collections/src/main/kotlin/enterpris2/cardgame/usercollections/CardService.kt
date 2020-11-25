@@ -1,8 +1,8 @@
 package enterpris2.cardgame.usercollections
 
+import enterpris2.cardgame.usercollections.model.Card
 import enterprise2.cardgame.cards.dto.CollectionDto
 import enterprise2.cardgame.cards.dto.Rarity
-import enterpris2.cardgame.usercollections.model.Card
 import enterpris2.cardgame.usercollections.model.Collection
 import org.enterpris2.cardgame.rest.WrappedResponse
 import org.slf4j.LoggerFactory
@@ -13,12 +13,9 @@ import org.springframework.core.ParameterizedTypeReference
 import org.springframework.http.HttpMethod
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
-
-import org.springframework.web.client.exchange
 import org.springframework.web.util.UriComponentsBuilder
 import javax.annotation.PostConstruct
 import kotlin.random.Random
-
 
 @Service
 class CardService(

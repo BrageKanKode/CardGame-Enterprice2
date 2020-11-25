@@ -1,3 +1,4 @@
+
 spring:
   datasource:
     url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
@@ -6,6 +7,9 @@ spring:
     database: h2
     show-sql: true
   cloud:
-      consul:
-        enabled: false
-
+    consul:
+      enabled: false
+  session:
+    store-type: none
+  main:
+    allow-bean-definition-overriding: true

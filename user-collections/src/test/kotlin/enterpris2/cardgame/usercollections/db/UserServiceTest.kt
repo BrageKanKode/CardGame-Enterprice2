@@ -1,8 +1,6 @@
 package enterpris2.cardgame.usercollections.db
 
-import enterpris2.cardgame.usercollections.CardService
-import enterpris2.cardgame.usercollections.FakeData
-import enterpris2.cardgame.usercollections.model.Collection
+
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -16,6 +14,9 @@ import org.springframework.stereotype.Service
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit.jupiter.SpringExtension
 import org.springframework.web.client.RestTemplate
+import enterpris2.cardgame.usercollections.CardService
+import enterpris2.cardgame.usercollections.FakeData
+import enterpris2.cardgame.usercollections.model.Collection
 
 
 @Profile("UserServiceTest")
