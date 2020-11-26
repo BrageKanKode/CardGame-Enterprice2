@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 import org.springframework.web.bind.annotation.*
 import enterpris2.cardgame.auth.db.UserService
+import org.springframework.amqp.core.FanoutExchange
+import org.springframework.amqp.rabbit.core.RabbitTemplate
 import java.security.Principal
 
 @RestController
@@ -18,7 +20,9 @@ import java.security.Principal
 class RestApi(
         private val service: UserService,
         private val authenticationManager: AuthenticationManager,
-        private val userDetailsService: UserDetailsService
+        private val userDetailsService: UserDetailsService,
+        private val rabbit: RabbitTemplate,
+        private val fanout: FanoutExchange
 ) {
 
     @RequestMapping("/user")
@@ -51,6 +55,8 @@ class RestApi(
         if (token.isAuthenticated) {
             SecurityContextHolder.getContext().authentication = token
         }
+
+        rabbit.convertAndSend(fanout.name, "", userId)
 
         return ResponseEntity.status(201).build()
     }
